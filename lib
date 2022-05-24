@@ -405,7 +405,7 @@ function ui_lib:NewGui()
 							end)
 							settings_keybind_mainevent:Disconnect();
 						else
-							kb.Text = "None";
+							kb.Text = "N/A";
 							settings_key_value = nil;
 							settings_keybind_mainevent:Disconnect();
 						end
@@ -416,7 +416,7 @@ function ui_lib:NewGui()
 			if settings_keybind_mainevent ~= nil then
 				settings_keybind_mainevent:Disconnect();
 			end
-			kb.Text = "None";
+			kb.Text = "N/A";
 			settings_key_value = nil;
 		end
 	end)
@@ -1821,7 +1821,7 @@ function ui_lib:NewGui()
 			keybind_btn.Position = UDim2.new(0.825, 0, 0.075, 0);
 			keybind_btn.Size = UDim2.new(0.15, 0, 0.85, 0);
 			keybind_btn.Visible = true;
-			keybind_btn.Text = "None";
+			keybind_btn.Text = "N/A";
 			keybind_btn.TextColor3 = Color3.fromRGB(255, 255, 255);
 			keybind_btn.Font = Enum.Font.Gotham;
 			keybind_btn.TextScaled = true;
@@ -1990,7 +1990,7 @@ function ui_lib:NewGui()
 										keybind_btn.Text = tostring(game:GetService("UserInputService"):GetStringForKeyCode(input.KeyCode));
 										keybind_mainevent:Disconnect();
 									else
-										keybind_btn.Text = "None";
+										keybind_btn.Text = "N/A";
 										key_value = nil;
 										keybind_mainevent:Disconnect();
 									end
@@ -2002,7 +2002,7 @@ function ui_lib:NewGui()
 					if keybind_mainevent ~= nil then
 						keybind_mainevent:Disconnect();
 					end
-					keybind_btn.Text = "None";
+					keybind_btn.Text = "N/A";
 					key_value = nil;
 				end
 			end)
