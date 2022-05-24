@@ -2,7 +2,7 @@ local ui_lib = {}
 
 function ui_lib:NewGui()
 	for _,v in pairs(game:GetService("CoreGui"):GetDescendants()) do
-		if v:IsA('StringValue') and tostring(v.Name) == "dizzy_hub" then
+		if v:IsA('StringValue') and tostring(v.Name) == "fivepeople" then
 			v.Parent:Destroy();
 		end
 	end
@@ -33,7 +33,7 @@ function ui_lib:NewGui()
 	end))
 
 	local str_v = Instance.new("StringValue", gui);
-	str_v.Name = "dizzy_hub";
+	str_v.Name = "fivepeople";
 
 	local main_frame = Instance.new("Frame", gui);
 	main_frame.BackgroundTransparency = 0;
