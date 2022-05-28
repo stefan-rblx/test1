@@ -841,7 +841,7 @@ function ui_lib:NewGui()
 
 			local tab_btn = Instance.new("TextButton", frame);
 			tab_btn.Active = true;
-			tab_btn.BackgroundColor3 = Color3.fromRGB(26, 26, 26);
+			tab_btn.BackgroundColor3 = Color3.fromRGB(50,50,50);
 			tab_btn.Name = tostring(name);
 			tab_btn.Position = UDim2.new(0.016, 0, 0, 0);
 			tab_btn.Size = UDim2.new(0.935, 0, 0.063, 0);
